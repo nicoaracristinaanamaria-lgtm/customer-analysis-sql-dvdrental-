@@ -14,42 +14,28 @@ The project demonstrates SQL querying, data aggregation, joins, and visualizatio
 Dataset
 The analysis is based on the **dvdrental** sample database, which includes tables
 
-Total rentals per Customer
-SELECT 
-    c.customer_id,
-    c.first_name || ' ' || c.last_name AS customer_name,
-    COUNT(r.rental_id) AS total_rentals
-FROM customer c
-JOIN rental r ON c.customer_id = r.customer_id
-GROUP BY c.customer_id, customer_name
-ORDER BY total_rentals DESC;
+Visualizations
+The repository includes the following charts:
 
-Average payment per Customer
-SELECT 
-    ROUND(AVG(total_amount), 2) AS avg_payment_per_customer
-FROM (
-    SELECT 
-        customer_id,
-        SUM(amount) AS total_amount
-    FROM payment
-    GROUP BY customer_id
-) sub;
+-Top 10 Customers by Total Payments (top_customers.png)
+-Total Rentals per Customer (rentals_per_customer.png)
+-Average Payment per Customer (avg_payment.png)
+-Total revenue per store (optional)
+-Active vs Inactive clients 
 
-Total revenue per store
-SELECT 
-    s.store_id,
-    SUM(p.amount) AS total_revenue
-FROM store s
-JOIN staff st ON s.store_id = st.store_id
-JOIN payment p ON st.staff_id = p.staff_id
-GROUP BY s.store_id
-ORDER BY total_revenue DESC;
+These visualizations were generated using pgAdmin’s Graph Visualiser.
 
-Active vs inactive customers
-SELECT 
-    active,
-    COUNT(*) AS total_customers
-FROM customer
-GROUP BY active
-ORDER BY active DESC;
+Insights
+Top Customers
+-The top 10 customers contribute a significant portion of total revenue.
+-Payment amounts are relatively balanced among the highest‑spending customers.
 
+Rental Behavior
+-Some customers show high rental frequency, indicating strong engagement.
+-Most customers fall within a moderate rental range.
+
+Average Payment
+-The average customer generates approximately $102 in total payments.
+
+Store Revenue
+One store consistently generates more revenue, likely due to higher transaction volume.
