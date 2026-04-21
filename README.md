@@ -18,29 +18,36 @@ Visualizations
 
 The repository includes the following charts:
 
- -Top 10 Customers by Total Payments (top 10 customers by payment.png)
+ - Top 10 Customers by Total Payments (top 10 customers by payment.png)
  
- -Total Rentals per Customer (total rentals per customer.png)
+ - Total Rentals per Customer (total rentals per customer.png)
  
- -Average Payment per Customer (average payment per customer.png)
+ - Average Payment per Customer (average payment per customer.png)
  
- -Total revenue per store (optional)
+ - Total revenue per store (optional)
  
- -Active vs Inactive clients 
+ - Active vs Inactive clients 
 
 These visualizations were generated using pgAdmin’s Graph Visualiser.
 
 Insights
+
 Top Customers
--The top 10 customers contribute a significant portion of total revenue.
--Payment amounts are relatively balanced among the highest‑spending customers.
+
+- The top 10 customers contribute a significant portion of total revenue.
+- 
+- Payment amounts are relatively balanced among the highest‑spending customers.
 
 Rental Behavior
--Some customers show high rental frequency, indicating strong engagement.
--Most customers fall within a moderate rental range.
+
+- Some customers show high rental frequency, indicating strong engagement.
+- 
+- Most customers fall within a moderate rental range.
 
 Average Payment
--The average customer generates approximately $102 in total payments.
+
+- The average customer generates approximately $102 in total payments.
 
 Store Revenue
-One store consistently generates more revenue, likely due to higher transaction volume.
+
+- One store consistently generates more revenue, likely due to higher transaction volume.
