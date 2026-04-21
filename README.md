@@ -1,7 +1,9 @@
 Customer Analysis using SQL (dvdrental Database)
 
 Project Overview
+
 This project analyzes customer behavior using the open‑source **dvdrental** PostgreSQL database.  
+
 The goal is to identify key customer insights such as:
 
 - Top customers by total payments  
