@@ -15,12 +15,17 @@ Dataset
 The analysis is based on the **dvdrental** sample database, which includes tables
 
 Visualizations
+
 The repository includes the following charts:
 
  -Top 10 Customers by Total Payments (top 10 customers by payment.png)
+ 
  -Total Rentals per Customer (total rentals per customer.png)
+ 
  -Average Payment per Customer (average payment per customer.png)
+ 
  -Total revenue per store (optional)
+ 
  -Active vs Inactive clients 
 
 These visualizations were generated using pgAdmin’s Graph Visualiser.
