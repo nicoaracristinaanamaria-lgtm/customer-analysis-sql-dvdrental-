@@ -14,6 +14,7 @@ The goal is to identify key customer insights such as:
 The project demonstrates SQL querying, data aggregation, joins, and visualization of analytical results.
 
 Dataset
+
 The analysis is based on the **dvdrental** sample database, which includes tables
 
 Visualizations
